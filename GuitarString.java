@@ -60,7 +60,7 @@ class GuitarString {
      * @param fret KP was das ist
      */
     public void pressFretDown(int fret)  {       // 
-	double[] hbuffer = new double[this.buffer.size0()];
+	double[] hbuffer = new double[this.buffer.size()];
 	int i = 0;
 	while (!this.buffer.isEmpty()){
 	    hbuffer[i]=this.buffer.dequeue();
