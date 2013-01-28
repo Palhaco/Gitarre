@@ -1,0 +1,127 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 8.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       157,          7]
+NotebookDataLength[      3726,        118]
+NotebookOptionsPosition[      3221,         94]
+NotebookOutlinePosition[      3579,        110]
+CellTagsIndexPosition[      3536,        107]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["GDP Abschlussprojekt", "Title",
+ CellChangeTimes->{{3.568397268086689*^9, 3.568397272692947*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"N", "[", 
+  RowBox[{"440", " ", 
+   SuperscriptBox["2", 
+    FractionBox[
+     RowBox[{"-", "5"}], "12"]]}], "]"}]], "Input",
+ CellChangeTimes->{{3.5683957963737907`*^9, 3.568395819044511*^9}}],
+
+Cell[BoxData["329.6275569128701`"], "Output",
+ CellChangeTimes->{{3.5683958134787903`*^9, 3.568395819636746*^9}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Manipulate", "[", 
+  RowBox[{
+   RowBox[{"Plot", "[", 
+    RowBox[{
+     RowBox[{".5", " ", 
+      RowBox[{"Sin", "[", 
+       RowBox[{"2", " ", "\[Pi]", " ", "freq", " ", 
+        FractionBox["i", "44100"]}], "]"}]}], ",", 
+     RowBox[{"{", 
+      RowBox[{"i", ",", "0", ",", "200"}], "}"}]}], "]"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"freq", ",", " ", "0", ",", " ", "440"}], "}"}]}], "]"}]], "Input",\
+
+ CellChangeTimes->{{3.568397130340395*^9, 3.568397226813697*^9}}],
+
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   DynamicModuleBox[{$CellContext`freq$$ = 284., Typeset`show$$ = True, 
+    Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
+    Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
+    "\"untitled\"", Typeset`specs$$ = {{
+      Hold[$CellContext`freq$$], 0, 440}}, Typeset`size$$ = {
+    360., {104., 109.}}, Typeset`update$$ = 0, Typeset`initDone$$, 
+    Typeset`skipInitDone$$ = True, $CellContext`freq$1126$$ = 0}, 
+    DynamicBox[Manipulate`ManipulateBoxes[
+     1, StandardForm, "Variables" :> {$CellContext`freq$$ = 0}, 
+      "ControllerVariables" :> {
+        Hold[$CellContext`freq$$, $CellContext`freq$1126$$, 0]}, 
+      "OtherVariables" :> {
+       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
+         Typeset`skipInitDone$$}, "Body" :> 
+      Plot[0.5 Sin[
+         2 Pi $CellContext`freq$$ ($CellContext`i/44100)], {$CellContext`i, 0,
+          200}], "Specifications" :> {{$CellContext`freq$$, 0, 440}}, 
+      "Options" :> {}, "DefaultOptions" :> {}],
+     ImageSizeCache->{403., {146., 152.}},
+     SingleEvaluation->True],
+    Deinitialization:>None,
+    DynamicModuleValues:>{},
+    SynchronousInitialization->True,
+    UnsavedVariables:>{Typeset`initDone$$},
+    UntrackedVariables:>{Typeset`size$$}], "Manipulate",
+   Deployed->True,
+   StripOnInput->False],
+  Manipulate`InterpretManipulate[1]]], "Output",
+ CellChangeTimes->{{3.56839719273869*^9, 3.568397227289741*^9}}]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{740, 867},
+WindowMargins->{{181, Automatic}, {250, Automatic}},
+FrontEndVersion->"8.0 for Mac OS X x86 (32-bit, 64-bit Kernel) (November 6, \
+2010)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[579, 22, 103, 1, 76, "Title"],
+Cell[CellGroupData[{
+Cell[707, 27, 217, 6, 44, "Input"],
+Cell[927, 35, 113, 1, 27, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[1077, 41, 497, 14, 47, "Input"],
+Cell[1577, 57, 1616, 33, 315, "Output"]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
