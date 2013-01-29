@@ -22,9 +22,13 @@ public class GuitarPlayerTest {
 
 	// keys to press a fret down, only the lower strings can be accessed
 	char[][] changeFretKeys = { { '<', 'y', 'x', 'c', 'v', 'b' },
-				    { 'a', 's', 'd', 'f', 'g', 'h' }, { 'q', 'w', 'e', 'r', 't', 'z' },
-				    { '2', '3', '4', '5', '6', '7' }, { },
-				    { } };
+				    { 'a', 's', 'd', 'f', 'g', 'h' }, 
+				    { 'q', 'w', 'e', 'r', 't', 'z' },
+				    { '2', '3', '4', '5', '6', '7' },
+				    //{ '>', 'Y', 'X', 'C', 'V', 'B' }, 
+				    //{ 'A', 'S', 'D', 'F', 'G', 'H' },
+				    //{ 'Q', 'W', 'E', 'R', 'T', 'Z' }
+	};
 
 	// the main input loop
 	while (true) {
