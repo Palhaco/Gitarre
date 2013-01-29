@@ -54,7 +54,10 @@ public class RingBuffer {
 	    return;
 		  
 	size++;
-	last = last++ % maxCapacity;
+		  
+	last++;
+	if (last >= maxCapacity)
+	    last = 0; 
 		  
 	buffer[last] = x;
     } 
@@ -69,7 +72,10 @@ public class RingBuffer {
 	    return Double.NaN;
 		  
 	size--;
-	first = first++ % maxCapacity;
+		  
+	first++;
+	if (first >= maxCapacity)
+	    first = 0;
 		  
 	return buffer[first];
     }

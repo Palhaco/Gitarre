@@ -90,6 +90,7 @@ class GuitarString {
      */
     public double sample()   {                    
 	return this.buffer.peek();
+	//	return this.buffer.dequeue();
     }	
 	
 }
