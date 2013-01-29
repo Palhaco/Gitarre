@@ -34,7 +34,7 @@ class GuitarString {
      */
     public void pluck()    {              
 	while (!this.buffer.isEmpty()){
-	    this.buffer.dequeue();           //erstes Element wird gelÃ¶scht (solange, bis alle gelÃ¶scht sind)
+	    this.buffer.dequeue();           //erstes Element wird gel√∂scht (solange, bis alle gel√∂scht sind)
 	}
 	while (!this.buffer.isFull()){
 	    this.buffer.enqueue(Math.random() - 0.5);
@@ -47,7 +47,7 @@ class GuitarString {
      */
     public void mute()    {                   
 	while (!this.buffer.isEmpty()){
-	    this.buffer.dequeue();           //erstes Element wird gelÃ¶scht (solange, bis alle gelÃ¶scht sind)
+	    this.buffer.dequeue();           //erstes Element wird gel√∂scht (solange, bis alle gel√∂scht sind)
 	}
 	while (!this.buffer.isFull()){
 	    this.buffer.enqueue(0.);
@@ -65,8 +65,8 @@ class GuitarString {
 	while (!this.buffer.isEmpty()){
 	    hbuffer[i]=this.buffer.dequeue();
 	}
-	this.frequenz = this.frequenz * Math.pow(2.0, fret / 12.0);
-	int bufferLaenge= (int) (SamplingRate/this.frequenz);
+	double newfrequenz = this.frequenz * Math.pow(2.0, fret / 12.0);
+	int bufferLaenge= (int) (SamplingRate/ newfrequenz);
 	this.buffer = new RingBuffer(bufferLaenge)	;
 	mute();
     }	
@@ -90,7 +90,6 @@ class GuitarString {
      */
     public double sample()   {                    
 	return this.buffer.peek();
-	//	return this.buffer.dequeue();
     }	
 	
 }

@@ -59,7 +59,7 @@ public class GuitarPlayerTest {
 
 	    // send the result to the sound card
 	    StdAudio.play(guitar.sample());
-	    System.out.println(guitar.sample());
+	    //System.out.println(guitar.sample());
 	    
 
 	    // advance the simulation of each guitar string by one step
