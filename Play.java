@@ -17,8 +17,9 @@ class Play {
 	    } 
 	    */
 	  
-	    for(double i=0; i<=.05; i+=0.01) {
-		StdAudio.play(.629 );
+	    for(double i=0; i<=.05; i+=0.01) 
+	    {
+	    	StdAudio.play(.629 );
 	    }
 	}
     }

@@ -31,6 +31,14 @@ public class GuitarPlayerTest {
 				    //{ 'Q', 'W', 'E', 'R', 'T', 'Z' }
 	};
 
+	int tics = 0;
+
+	double oldX = 0;
+	double oldY = 0;
+	
+	double newX = 0;
+	double newY = 0;
+	
 	// the main input loop
 	while (true) {
 
@@ -62,13 +70,34 @@ public class GuitarPlayerTest {
 
 	    }
 
+		tics++;
+		
+		newY = guitar.sample();
+		
+		if (tics % 1000 == 0)
+		{	
+			newX++;
+			if (tics > 100000)
+			{
+				StdDraw.clear();
+				oldX = 0;
+				oldY = 0;
+				newX = 1;
+				tics = 0;
+			}
+		
+			StdDraw.line(oldX/100., oldY + .5, newX/100., newY + .5);
+			
+			oldX = newX;
+			oldY = newY;
+		}
+	    
 	    // send the result to the sound card
 	    StdAudio.play(guitar.sample());
 	    //System.out.println(guitar.sample());
 	    
-
 	    // advance the simulation of each guitar string by one step
 	    guitar.tic();
-	}
+		}
     }
 }
