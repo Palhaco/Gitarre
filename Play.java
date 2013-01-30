@@ -1,3 +1,5 @@
+import gdp.stdlib.*;
+
 class Play {
     public static void main(String[] args) {
 	/*
@@ -18,9 +20,6 @@ class Play {
 	    for(double i=0; i<=.05; i+=0.01) {
 		StdAudio.play(.629 );
 	    }
-	  
-
-
 	}
     }
 }

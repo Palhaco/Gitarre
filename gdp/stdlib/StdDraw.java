@@ -1,3 +1,4 @@
+package gdp.stdlib;
 
 /*************************************************************************
  *  Compilation:  javac StdDraw.java

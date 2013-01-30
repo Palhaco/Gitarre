@@ -5,6 +5,7 @@
  ******************************************************************************/
 
 import java.awt.Font;
+import gdp.stdlib.*;
 
 public class GuitarPlayerTest {
 
